@@ -10,7 +10,7 @@ export const GameState = Object.freeze({
 export default class Game{
     constructor(){
         this.stateCur = GameState.WELCOMING;
-        this.numQuestions = 21
+        this.numQuestions = 20
         this.object = objList[Math.floor(Math.random()*objList.length)];
         this.gameNum=0;
     }
@@ -27,9 +27,12 @@ export default class Game{
     // string function, takes user input and responds with next step in the game. 
     makeAMove(sInput)
     {
-        let sReply = "Welcome!"
+        let sReply;
         switch(this.stateCur){
             case GameState.WELCOMING:
+                sReply = "Welcome! I'm thinking of an animal. You have 20 yes or no questions to get the correct answer. Ask a question!";
+                this.numQuestions = 20
+                this.object = objList[Math.floor(Math.random()*objList.length)];
                 this.stateCur = GameState.QUESTIONS;
                 break;
             case GameState.PLAY_AGAIN:
@@ -45,14 +48,14 @@ export default class Game{
             case GameState.QUESTIONS:
                 if(this.numQuestions==1){
                     sReply ="Sorry, you lose! Do you want to play again?";
-                    this.numQuestions=21;
+                    this.numQuestions=20;
                     this.gameNum+=1;
                     this.object = objList[Math.floor(Math.random(this.gameNum)*objList.length)];
                     this.stateCur = GameState.PLAY_AGAIN;
                 }
                 else if(sInput.toLowerCase().match(this.object.name)!=null){
                     sReply="Congratulations, you won! Do you want to play again?";
-                    this.numQuestions=21;
+                    this.numQuestions=20;
                     this.gameNum+=1;
                     this.object = objList[Math.floor(Math.random(this.gameNum)*objList.length)];
                     this.stateCur =GameState.PLAY_AGAIN;
