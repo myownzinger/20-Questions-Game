@@ -26,7 +26,7 @@ $(function(){
  */
 $('#clear').click(function(){
     localStorage.removeItem('history');
-    $('#messages').html('');
+    $('#messages').html('<li class="from-server"><p>Try sending a message.... see how it goes :)</p></li>');
 });
 
 /**

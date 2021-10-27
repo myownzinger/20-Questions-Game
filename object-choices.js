@@ -41,7 +41,7 @@ var crow = [
     "beak",
     "wing",
     "feather",
-    "omnivore"
+    "omnivore",
 ];
 crow.name = "crow";
 var parrot = [
@@ -65,7 +65,9 @@ var parrot = [
     "fly",
     "omnivore",
     "seeds",
-    "feather"
+    "feather",
+    "speak",
+    "white face",
 ];
 parrot.name = "parrot";
 var blueWhale = [
@@ -80,7 +82,9 @@ var blueWhale = [
     "whale",
     "carnivore",
     "endangered",
-    "old"
+    "old",
+    "bumpy",
+    "ancient"
 ];
 blueWhale.name = "blue whale";
 var elephant = [
