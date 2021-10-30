@@ -20,7 +20,12 @@ var panda = [
     "cute",
     "like sleep",
     "sleep",
-    "sleep a lot"
+    "sleep a lot",
+    "walk",
+    "land",
+    "multicoloured",
+    "multicolored",
+
 ];
 panda.name = "panda";
 var crow = [
@@ -42,6 +47,9 @@ var crow = [
     "wing",
     "feather",
     "omnivore",
+    "land",
+    "trees",
+    "give gifts",
 ];
 crow.name = "crow";
 var parrot = [
@@ -68,6 +76,8 @@ var parrot = [
     "feather",
     "speak",
     "white face",
+    "land",
+    "trees"
 ];
 parrot.name = "parrot";
 var blueWhale = [
@@ -84,7 +94,9 @@ var blueWhale = [
     "endangered",
     "old",
     "bumpy",
-    "ancient"
+    "ancient",
+    "water",
+    "bigger than a house"
 ];
 blueWhale.name = "blue whale";
 var elephant = [
@@ -109,7 +121,10 @@ var elephant = [
     "never forget",
     "remember",
     "poach",
-    "gentle"
+    "gentle",
+    "land",
+    "bigger than a car",
+    "larger than a car",
 ];
 elephant.name = "elephant";
 var anaconda = [
@@ -133,7 +148,12 @@ var anaconda = [
     "scales", 
     "amazon",
     "rainforest",
-    "rain forest"
+    "rain forest",
+    "land",
+    "slither",
+    "tongue",
+    "fangs",
+    "scary"
 ];
 anaconda.name = "anaconda";
 var objList = [panda, crow, parrot, blueWhale, elephant, anaconda];
